@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>城市选择</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/city.css">
+</head>
+
+<body>
+    <div class="index_selection_page_container">
+        <header>  
+            <a class="back-icon" href="index.html"></a>
+            <input class="searchcity" type="text" placeholder="请输入城市/拼音" list="citys">
+            <!-- h5新标签datalist用于给输入框增加下拉选项 -->
+            <datalist id="citys">
+            </datalist>
+            <button onclick="searchcity()">搜索</button>
+        </header>
+            <div class="now"></div>
+
+    </div>
+</body>
+<script src="js/city.js"></script>
+<!-- 整体函数 -->
+<script type="text/javascript" src="js/index.js"></script>   
+<script>
+    // 在页面导入时刷新当前定位
+    document.querySelector(".now").innerHTML = "当前定位:  "+ getCookie("city");
+    new indexSelection(null,function(value){
+        document.cookie = "city="+value; 
+        // 在调用该函数时实时刷新当前选择定位
+        document.querySelector(".now").innerHTML = "当前定位:  "+getCookie("city");
+    })
+</script>
+</html>

@@ -1,0 +1,121 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #333;
+    overflow: hidden;
+}
+
+.index_selection_page_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.index_selection_page_container ul,
+.index_selection_page_container li {
+    list-style-type: none;
+}
+
+.index_selection_flex_1 {
+    flex: 1;
+}
+
+.index_selection_scroll_bar {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.index_selection_data_list li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.index_selection_title_p {
+    height: 40px;
+    background: #f7f7f7;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.index_selection_city_activate {
+    color: #74abfb;
+}
+
+.index_selection_cursor {
+    top: 40px;
+    width: 30px;
+    right: 0;
+    position: absolute;
+    height: auto;
+    z-index: 999;
+    background-color: #ca141400;
+    color: #3f8af9;
+    top: 50%;
+    transform: translate(-0, -50%);
+}
+
+.index_selection_cursor li {
+    margin-top: 1px;
+    text-align: center
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    position: relative;
+}
+header .back-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    background-image: url("../img/back.png");
+    background-size: cover;
+}
+
+header .searchcity{
+    position: absolute;
+    left: 45px;
+    top: 5px;
+    height: 25px;
+    width: 70%;
+    border:1px solid #e0e0e0;
+}
+header button{
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+}
+.now{
+    border-top: 1px solid rgb(226, 226, 226);
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.hotcitys{
+    width: 100%;
+    background-color: white;
+}
+.hotcity{
+    margin: 5px;
+    float: left;
+    width: 22%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f7f7f7;
+}

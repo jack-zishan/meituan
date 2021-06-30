@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>首页</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <!-- 样式重置 -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- 整体样式 -->
+        <link rel="stylesheet" type="text/css" href="css/starScore.css" />
+        <!-- 星级评分 -->
+        <link rel="stylesheet" type="text/css" href="css/bottomBar.css" />
+        <!-- 底部菜单栏 -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- 引入swiper样式 -->
+    </head>
+
+    <body>
+        <!--头部开始-->
+        <div class="header">
+            <div class="search-bar">
+                <a class="bar-location" href="city.html">
+                    <div class="location-icon"></div>
+                    <div class="location-text"></div>
+                </a>
+                <div class="search-btn">
+                    <p class="place-holder">鸡翅</p>
+                </div>
+            </div>
+            <img class="header-img" src="https://app.nihaoshijie.com.cn/upload/bannertemp.e8a6fa63.jpg" />
+        </div>
+        <!--头部结束-->
+        <!--类目结束-->
+        <div class="category-content clearfix swiper-container">
+            <div class="swiper-wrapper clearfix"></div>
+        </div>
+        <!--类目结束-->
+        <!--商家列表开始-->
+        <div class="list-content">
+            <h4 class="list-title">
+                <span class="title-line"></span>
+                <span>附近商家</span>
+                <span class="title-line"></span>
+            </h4>
+            <div class="list-wrap"></div>
+            <div class="loading">加载中</div>
+        </div>
+        <!--商家列表结束-->
+        <!--底部栏开始-->
+        <div class="bottom-bar"></div>
+        <!--底部栏结束-->
+        <!-- swiper.js放在前面以免下面的js文件读取不了swiper -->   
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--引入高德地图api，自动定位城市-->
+        <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=60c83ffb9364ec49bbde4206613f26ad&plugin=AMap.CitySearch"></script>
+        <!-- 整体函数 -->
+        <script type="text/javascript" src="js/index.js"></script>        
+        <!-- 城市定位 -->
+        <script type="text/javascript" src="js/localCity.js"></script>
+        <!-- 屏幕适配 -->
+        <script type="text/javascript" src="js/resize.js"></script>
+        <!-- 星级评分 -->
+        <script type="text/javascript" src="js/starScore.js"></script>
+        <!-- 美食分类 -->
+        <script type="text/javascript" src="js/category.js"></script>
+        <!-- 底部菜单栏 -->
+        <script type="text/javascript" src="js/bottomBar.js"></script>
+        <!-- 商家列表 -->
+        <script type="text/javascript" src="js/contentList.js"></script>
+    </body>
+</html>

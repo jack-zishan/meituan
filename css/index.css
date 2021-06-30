@@ -1,0 +1,202 @@
+/* header */
+.header {
+    position: relative;
+}
+.header .header-img {
+    width: 100%;
+    height: 4.746667rem;
+}
+/* 搜索框 */
+.search-bar {
+    width: 100%;
+    height: 1.066667rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.213333rem;
+}
+.search-bar .bar-location {
+    margin-right: 0.533333rem;
+    border-radius: 0.346667rem;
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 2.453333rem;
+    height: 0.746667rem;
+}
+.search-bar .location-icon {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.533333rem;
+    vertical-align: 0.213333rem;
+    margin-left: 0.16rem;
+    background-image: url("../img/locationIcon.png");
+    background-size: cover;
+}
+.search-bar .location-text {
+    position: relative;
+    display: inline-block;
+    font-size: 0.373333rem;
+    color: #fff;
+    vertical-align: 0.35rem;
+    margin-left: -0.08rem;
+}
+.search-bar .location-text::after {
+    content: " ";
+    display: block;
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background-image: url("../img/arrowIcon.png");
+    background-size: cover;
+    position: absolute;
+    right: -0.4rem;
+    top: -0.026667rem;
+}
+.search-bar .search-btn {
+    position: relative;
+    width: 4.533333rem;
+    height: 0.8rem;
+    background-color: #fff;
+    border-radius: 0.533333rem;
+}
+.search-bar .search-btn::before {
+    content: " ";
+    display: block;
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background-image: url("../img/search.png");
+    background-size: cover;
+    top: 0.213333rem;
+    left: 0.266667rem;
+    position: absolute;
+}
+.search-bar .place-holder {
+    color: #a9a9a9;
+    font-size: 0.373333rem;
+    height: 100%;
+    line-height: 0.8rem;
+    margin-left: 0.746667rem;
+}
+/* 类目图标 */
+.category-content {
+    padding-bottom: 0.266667rem;
+}
+.category-content .category-item {
+    float: left;
+    width: 25%;
+    padding-top: 0.373333rem;
+    font-size: 0.346667rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category-content .item-icon {
+    width: 1.253333rem;
+}
+.category-content .item-name {
+    margin-top: 0.373333rem;
+}
+/* 商家列表 */
+.list-content {
+    overflow: hidden;
+    padding-bottom: 1.333333rem;
+}
+.list-content .list-title {
+    text-align: center;
+    font-size: 0.426667rem;
+    margin-top: 0.373333rem;
+    margin-bottom: 0.133333rem;
+}
+.list-content .title-line {
+    display: inline-block;
+    border-bottom: 0.026667rem solid #949494;
+    height: 0.026667rem;
+    width: 0.8rem;
+    margin-left: 0.106667rem;
+    margin-right: 0.106667rem;
+    margin-bottom: 0.106667rem;
+}
+.loading {
+    padding-bottom: 0.266667rem;
+    padding-top: 0.266667rem;
+    font-size: 0.426667rem;
+    text-align: center;
+    color: #ccc;
+}
+.r-item-content {
+    display: flex;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    margin-left: 0.266667rem;
+    margin-right: 0.266667rem;
+    color: #656565;
+    position: relative;
+}
+.r-item-content .item-img {
+    width: 2.293333rem;
+    height: 1.733333rem;
+    border: 0.026667rem solid #e4e4e4;
+}
+.r-item-content .item-info-content {
+    flex: 1;
+    margin-left: 0.186667rem;
+    overflow: hidden;
+}
+.r-item-content .brand {
+    position: absolute;
+    left: 0.026667rem;
+    top: 0.426667rem;
+    font-size: 0.32rem;
+    padding: 0.053333rem;
+    color: #fff;
+}
+.r-item-content .brand-pin {
+    background-color: #ffa627;
+}
+.r-item-content .brand-xin {
+    background-color: #21c56c;
+}
+.r-item-content .item-title {
+    margin-top: 0.08rem;
+    font-size: 0.426667rem;
+    font-weight: 500;
+    color: #333;
+}
+.r-item-content .item-desc {
+    margin-top: 0.346667rem;
+    font-size: 0.32rem;
+}
+.r-item-content .item-count {
+    float: left;
+    margin-left: 0.133333rem;
+}
+.r-item-content .item-time {
+    float: right;
+}
+.r-item-content .item-distance {
+    float: right;
+}
+.r-item-content .item-score {
+    float: left;
+}
+.r-item-content .item-price {
+    margin-top: 0.266667rem;
+    font-size: 0.32rem;
+    height: 0.64rem;
+}
+.r-item-content .other-info {
+    color: #898989;
+    margin-top: 0.186667rem;
+    font-size: 0.32rem;
+    display: flex;
+}
+.r-item-content .other-tag {
+    width: 0.373333rem;
+    height: 0.373333rem;
+}
+.other-content {
+    margin-left: 0.08rem;
+    height: 0.373333rem;
+    width: 6.133333rem;
+    margin-top: 0.026667rem;
+}
