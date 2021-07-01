@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/search.css">
+</head>
+<body>
+    <div class="main">
+        <header>  
+            <a class="back-icon" href="index.html"></a>
+            <input class="searchgoods" type="text" placeholder="请输入商品关键字" list="goods">
+            <!-- h5新标签datalist用于给输入框增加下拉选项 -->
+            <datalist id="goods">
+            </datalist>
+            <button onclick="searchgoods()">搜索</button>
+        </header>
+    </div>
+</body>        
+    <!-- 屏幕适配 -->
+    <script type="text/javascript" src="js/resize.js"></script>
+    <!-- 搜索商品 -->
+    <script type="text/javascript" src="js/search.js"></script>
+</html>

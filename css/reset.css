@@ -32,6 +32,10 @@ ol, ul {
 } 
 blockquote, q { 
     quotes: none;
+}
+/* 鼠标聚焦这之上时不出现默认边框 */
+input{
+    outline: none;
 } 
 blockquote:before, blockquote:after,
 q:before, q:after { 
@@ -42,6 +46,7 @@ table {
     border-collapse: collapse; 
     border-spacing: 0;
 } 
+/* 统一清除浮动 */
 .clearfix::after { 
     content: ' '; 
     visibility: hidden; 

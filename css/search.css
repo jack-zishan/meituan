@@ -1,0 +1,117 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #333;
+    font-size: .35rem;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+header .back-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    background-image: url("../img/back.png");
+    background-size: cover;
+}
+
+header .searchgoods{
+    position: absolute;
+    left: 45px;
+    top: 5px;
+    height: 25px;
+    width: 70%;
+    border:1px solid #e0e0e0;
+}
+header button{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+}
+.hotgoods{
+    width: 100%;
+    color: #5c5c5c;
+    background-color: white;
+}
+.hotgoods-text{
+    font-size: 16px;
+    color: #5c5c5c;
+    padding: 10px 10px 0px 10px;
+}
+.hotgood{
+    margin: 10px;
+    padding:0 15px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.history{
+    border-top: 8px solid #f0f0f0;
+}
+.history-title{
+    font-size: 16px;
+    color: #5c5c5c;
+    padding: 10px;
+}
+.history-content{
+    position: relative;
+    height: .8rem;
+    line-height: .8rem;
+    padding-left: .75rem;
+    border-top: 1px solid #f0f0f0;
+}
+.history-content::before{
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background-image: url("../img/history.png");
+    background-size: cover;
+    left: .3rem;
+    top: .2rem;
+}
+.clear-history{
+    margin: 0 auto;
+    position: relative;
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: 1rem;
+    width: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid #b9b9b9;
+}
+.clear-history::before{
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 0.373333rem;
+    height: 0.373333rem;
+    background-image: url("../img/clear.jpeg");
+    background-size: cover;
+    left: .5rem;
+    top: .32rem;
+}
