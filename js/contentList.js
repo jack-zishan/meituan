@@ -52,7 +52,8 @@
      *  渲染月售
      *  param {} data */
     function getMonthNum(data) {
-        let num = data.month_sale_num; // 大于999采用999+
+        let num = data.month_sale_num; 
+        // 大于999采用999+
         if (num > 999) {
             return "999+";
         }
@@ -71,8 +72,10 @@
                 '<div class="other-info">' +
                 '<img src=$icon_url class="other-tag" />' +
                 '<p class="other-content one-line">$info</p>' +
-                "</div>"; // 模版字符串替换数据
-            _str = _str.replace("$icon_url", item.icon_url).replace("$info", item.info); // 字符串拼接
+                "</div>"; 
+            // 模版字符串替换数据
+            _str = _str.replace("$icon_url", item.icon_url).replace("$info", item.info); 
+            // 字符串拼接
             str = str + _str;
         });
         return str;
@@ -95,6 +98,7 @@
             let p = document.createElement("a");
             p.href = "cart.html";
             p.innerHTML = str;
+            // 给每个块绑定一个点击事件，找到同级的店名，最后存储在cookie中
             p.addEventListener("click",function(e){
                 let shop = e.target.parentNode.parentNode.querySelector(".item-title").textContent;
                 document.cookie = "shop="+shop;
@@ -120,7 +124,10 @@
                     if (isLoading) {
                         return;
                     }
-                    getList();
+                    // 模拟网络加载，延时两秒执行代码
+                    setTimeout(() => {
+                        getList();
+                    }, 2000);
                 } else {
                     document.querySelector(".loading").innerHTML = "加载完成";
                 }

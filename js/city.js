@@ -75,6 +75,10 @@ function indexSelection(dataList = [], callbackFn = function () {}) {
         }
         document.querySelector(".index_selection_flex_1").style.display = "none";
         document.querySelector(".index_selection_cursor").style.display = "none";
+        // 显示搜索结果一秒之后自动跳转主页
+        setTimeout(() => {
+            window.location.href="index.html";
+        }, 1000);
     }
 
 let defaultDataSource = [

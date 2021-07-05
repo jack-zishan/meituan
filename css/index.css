@@ -122,12 +122,35 @@
     margin-right: 0.106667rem;
     margin-bottom: 0.106667rem;
 }
+/* 添加一个缓冲动画优化使用体验 */
 .loading {
-    padding-bottom: 0.266667rem;
-    padding-top: 0.266667rem;
-    font-size: 0.426667rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    font-size: 0.4rem;
     text-align: center;
     color: #ccc;
+    display: flex;
+    justify-content: space-around;
+}
+@keyframes buffer {
+    from {transform:scale(0);}
+    to {transform:scale(1);}
+}
+.loading div{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #ffbc5f;
+    animation: buffer 0.6s infinite alternate;
+}
+.loading div:nth-child(1){
+    animation-delay: 0.1s;
+}
+.loading div:nth-child(2){
+    animation-delay: 0.3s;
+}
+.loading div:nth-child(3){
+    animation-delay: 0.5s;
 }
 .r-item-content {
     display: flex;

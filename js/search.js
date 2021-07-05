@@ -4,7 +4,7 @@
     let str = '<div class="hotgoods"><div class="hotgoods-text">大家都在搜</div>'+
     '<ul class="hotgoods clearfix">';
     for(let i = 0;i<hot.length;i++){
-        str+='<li class="hotgood" onclick="fn(this.textContent)">'+hot[i]+'</li>'
+        str+='<li class="hotgood">'+hot[i]+'</li>'
     }
     str+='</ul></div><div class="history">'+
     '<p class="history-title">历史记录</p>'+
@@ -15,6 +15,7 @@
     let div = document.createElement("div");
     div.innerHTML = str;
     main.appendChild(div);
+    searchgoods();
 })()
 function searchgoods() {
     // 提交之前先判断需不需要存储，如果当前数据中已经存在的，那么不去重复添加
@@ -34,14 +35,11 @@ function searchgoods() {
     function addDataList() {
         let opt = "";
         let locData = JSON.parse(localStorage.getItem("dataList"));
-        if (locData.length > 10) {
-            locData = locData.slice(locData.length - 10, locData.length);
+        // 当历史记录达到五条，就不进行显示
+        if (locData.length > 6) {
+            locData = locData.slice(locData.length - 6, locData.length);
         }
         for (let i = 1, len = locData.length; i < len; len--) {
-            // 当历史记录达到五条，就不进行显示
-            if(len==5){
-                break;
-            }
             // 从后往前添加，新历史记录放在最上方
             opt += '<li class="history-content">'+locData[len-1]+'</li>';
         }
